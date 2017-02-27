@@ -1,0 +1,5 @@
+Synchronisation à distance de mes données
+
+rsync -e ssh -avz  --delete  path_folder_to_sync path_folder_server  
+exemple: 
+rsync -e ssh -avz  --delete  data ould@bach5.imag.fr:/home/project/data/
