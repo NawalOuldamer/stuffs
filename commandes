@@ -14,3 +14,9 @@ Raw
 
 find ~/.m2 -atime +30 -iname '*.pom' | while read pom; do parent=`dirname "$pom"`; rm -Rf "$parent"; done;
 find ~/.m2 -empty -type d -delete;
+
+
+
+***** maven terrier 
+mvn install:install-file  -Dfile=terrier-4.0-core.jar   -DgroupId=terrier   -DartifactId=terrier-core   -Dversion=4.0   -DgeneratePom=true    -Dpackaging=jar
+
